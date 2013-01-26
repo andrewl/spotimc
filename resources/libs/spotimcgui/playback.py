@@ -282,6 +282,7 @@ class PlaylistManager:
                     self.__playlist.add('dummy-%d' % index, xbmcgui.ListItem(''))
             
             #Add the desired item and play it
+            self.stop()
             self._add_item(offset, track_list[offset], session)
             self._play_item(offset)
             
